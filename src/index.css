@@ -1,13 +1,104 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+html {
+  box-sizing: border-box;
+  background-color: #dee3eb;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  padding: 0;
+  margin: 0;
 }
+.shared-background {
+  background-image: url('images/hero-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center -35rem;
+  background-size: 90rem;
+  height: 100vh;
+}
+#root {
+}
+/**********NAVBAR*************/
+.navbar {
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  background-color: transparent;
+}
+.navbar-links-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 0.1fr 0.3fr 0.1fr;
+}
+
+.navbar-button {
+  display: block;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #dee3eb;
+  border: none;
+  background-color: transparent;
+  font-family: 'Bebas Neue';
+}
+.navbar-button:hover {
+  color: #e2bb39;
+}
+
+.navbar-icons-grid {
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr;
+}
+.navbar-title {
+  margin-left: 30px;
+  display: block;
+  font-family: 'Bebas Neue';
+  font-size: 1.8rem;
+  color: #dee3eb;
+}
+
+.navbar-icon {
+  color: #dee3eb;
+}
+.navbar-icon:hover {
+  color: #e2bb39;
+}
+/**********NAVBAR*************/
+/**********HERO*************/
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100vh;
+}
+.hero-h1 {
+  text-align: left;
+  padding: 3rem;
+  color: #dee3eb;
+  font-size: 6rem;
+  font-family: 'Bebas Neue';
+  letter-spacing: 0.3rem;
+  opacity: 90%;
+}
+/**********HERO*************/
+/**********ABOUT*************/
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+  padding: 3rem;
+}
+.card {
+  padding: 2rem;
+  font-family: 'Bebas Neue';
+  position: relative;
+  top: 7rem;
+  background: #dee3eb;
+  text-align: center;
+  font-size: 7rem;
+}
+.card > h6 {
+  font-size: 2rem;
+}
+/**********ABOUT*************/
