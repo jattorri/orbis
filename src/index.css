@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 html {
   box-sizing: border-box;
   background-color: #dee3eb;
@@ -15,13 +16,12 @@ body {
   background-size: 90rem;
   height: 100vh;
 }
-#root {
-}
+
 /**********NAVBAR*************/
 .navbar {
   padding: 2em;
   display: grid;
-  grid-template-columns: 0.5fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   background-color: transparent;
 }
 .navbar-links-grid {
@@ -100,4 +100,80 @@ body {
 .card > h6 {
   font-size: 2rem;
 }
+.navbar-toggle {
+  display: none;
+}
 /**********ABOUT*************/
+@media (max-width: 800px) {
+  .hero-h1 {
+    text-align: center;
+    padding: 3rem;
+    color: #dee3eb;
+    font-size: 4rem;
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.3rem;
+  }
+  .navbar-icons-grid {
+    display: none;
+  }
+  .navbar-links-grid {
+    display: none;
+  }
+  .about {
+    display: block;
+    height: 100vh;
+    padding: 3rem;
+  }
+  .navbar-toggle {
+    position: relative;
+    padding: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    display: block;
+    color: #dee3eb;
+  }
+  .navbar-toggle:hover {
+    color: #e2bb39;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-h1 {
+    text-align: center;
+    padding: 3rem;
+    color: #dee3eb;
+    font-size: 3rem;
+    font-family: 'Bebas Neue';
+    letter-spacing: 0.3rem;
+  }
+  .navbar-icons-grid {
+    display: none;
+  }
+  .navbar-links-grid {
+    display: none;
+  }
+  .about {
+    display: block;
+    height: 100vh;
+    padding: 2rem;
+  }
+  .navbar-toggle {
+    left: 2rem;
+    position: relative;
+    padding: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    display: block;
+    color: #dee3eb;
+  }
+  .navbar-toggle:hover {
+    color: #e2bb39;
+  }
+  .navbar-title {
+    margin-left: 30px;
+    display: block;
+    font-family: 'Bebas Neue';
+    font-size: 1.5rem;
+    color: #dee3eb;
+  }
+}

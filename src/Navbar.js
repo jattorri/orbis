@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { DiJqueryLogo } from 'react-icons/di';
+import { AiOutlineMenu } from 'react-icons/ai';
 
 const Navbar = () => {
   return (
@@ -29,6 +30,10 @@ const Navbar = () => {
         <a href='www.twitter.com' className='navbar-icon'>
           <FaTwitter />
         </a>
+      </div>
+      <div></div>
+      <div className='navbar-toggle'>
+        <AiOutlineMenu />
       </div>
     </nav>
   );
