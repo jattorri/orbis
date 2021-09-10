@@ -243,7 +243,6 @@ body {
   }
   .about {
     display: block;
-    height: 100vh;
     padding: 2rem;
   }
   .navbar-toggle {
