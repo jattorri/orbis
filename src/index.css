@@ -12,8 +12,8 @@ body {
 .shared-background {
   background-image: url('images/hero-img.jpg');
   background-repeat: no-repeat;
-  background-position: center -35rem;
-  background-size: 90rem;
+  background-position: center;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -65,6 +65,7 @@ body {
 .navbar-icon:hover {
   color: #e2bb39;
 }
+
 /**********NAVBAR*************/
 /**********HERO*************/
 .hero {
@@ -103,6 +104,12 @@ body {
 .navbar-toggle {
   display: none;
 }
+.modal {
+  width: 6rem;
+  height: 6rem;
+  background: black;
+  display: none;
+}
 /**********ABOUT*************/
 @media (max-width: 800px) {
   .hero-h1 {
@@ -133,6 +140,31 @@ body {
     color: #dee3eb;
   }
   .navbar-toggle:hover {
+    color: #e2bb39;
+  }
+  .modal-hide {
+    display: none;
+  }
+  .modal-show {
+    color: #dee3eb;
+    display: block;
+  }
+  .modal {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: transparent;
+    display: block;
+  }
+  .modal-button {
+    border: none;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: #dee3eb;
+    background-color: transparent;
+    font-family: 'Bebas Neue';
+  }
+  .modal-button:hover {
     color: #e2bb39;
   }
 }
