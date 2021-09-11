@@ -4,7 +4,9 @@ html {
   box-sizing: border-box;
   background-color: #dee3eb;
 }
-
+h1 {
+  color: white;
+}
 body {
   padding: 0;
   margin: 0;
@@ -129,6 +131,9 @@ body {
   background-color: transparent;
   font-family: 'Bebas Neue';
 }
+.table-button:hover {
+  color: #e2bb39;
+}
 .table-grid {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr 0.5fr;
@@ -137,6 +142,8 @@ body {
 .image {
   border-radius: 3%;
   background: #dee3eb;
+  max-width: 200px;
+  max-height: 100px;
 }
 @media (max-width: 800px) {
   .hero-h1 {
