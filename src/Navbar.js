@@ -17,7 +17,7 @@ const Navbar = () => {
       <div>
         <p className='navbar-title'>
           <DiJqueryLogo />
-          ORBIS.SA
+          OBIS.SA
         </p>
       </div>
       <div className='navbar-links-grid'>
