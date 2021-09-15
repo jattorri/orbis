@@ -4,8 +4,18 @@ import TableGrid from './TableGrid';
 const Products = () => {
   const [buttonActive, setButtonActive] = useState('');
   return (
-    <div className='products'>
-      <div className='table-buttons-container'>
+    <div
+      className='products'
+      data-aos='fade-in'
+      data-aos-delay='50'
+      data-aos-duration='2000'
+    >
+      <div
+        className='table-buttons-container'
+        data-aos='fade-right'
+        data-aos-delay='50'
+        data-aos-duration='2000'
+      >
         <button
           className='table-button'
           onClick={() => setButtonActive('maternoinfantil')}
@@ -32,7 +42,7 @@ const Products = () => {
         </button>
       </div>
 
-      <TableGrid buttonActive={buttonActive} />
+      <TableGrid buttonActive={buttonActive} className='products' />
     </div>
   );
 };

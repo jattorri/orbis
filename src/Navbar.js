@@ -3,11 +3,17 @@ import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { DiJqueryLogo } from 'react-icons/di';
 import { AiOutlineMenu } from 'react-icons/ai';
 import Modal from './Modal';
+
 const Navbar = () => {
   const [openModal, setopenModal] = useState(false);
 
   return (
-    <nav className='navbar'>
+    <nav
+      className='navbar'
+      data-aos='zoom-in'
+      data-aos-delay='50'
+      data-aos-duration='2000'
+    >
       <div>
         <p className='navbar-title'>
           <DiJqueryLogo />

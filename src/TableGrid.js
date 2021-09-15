@@ -2,7 +2,12 @@ import React from 'react';
 const TableGrid = ({ buttonActive }) => {
   if (buttonActive === 'maternoinfantil') {
     return (
-      <div className='table-grid'>
+      <div
+        className='table-grid'
+        data-aos='fade-right'
+        data-aos-delay='50'
+        data-aos-duration='2000'
+      >
         <img
           className='image'
           src='https://obis.com.ar/wp-content/uploads/2021/05/babelito-150x150.png'
@@ -13,7 +18,12 @@ const TableGrid = ({ buttonActive }) => {
   }
   if (buttonActive === 'dermocosmetica') {
     return (
-      <div className='table-grid'>
+      <div
+        className='table-grid'
+        data-aos='fade-right'
+        data-aos-delay='50'
+        data-aos-duration='2000'
+      >
         <img
           className='image'
           src='https://obis.com.ar/wp-content/uploads/2021/05/essence-150x150.png'
@@ -29,7 +39,12 @@ const TableGrid = ({ buttonActive }) => {
   }
   if (buttonActive === 'cuidadopersonal') {
     return (
-      <div className='table-grid'>
+      <div
+        className='table-grid'
+        data-aos='fade-right'
+        data-aos-delay='50'
+        data-aos-duration='2000'
+      >
         <img
           className='image'
           src='https://obis.com.ar/wp-content/uploads/2021/05/koleston-150x150.png'
@@ -39,7 +54,12 @@ const TableGrid = ({ buttonActive }) => {
     );
   }
   return (
-    <div className='table-grid'>
+    <div
+      className='table-grid'
+      data-aos='fade-right'
+      data-aos-delay='50'
+      data-aos-duration='2000'
+    >
       <img
         className='image'
         src='https://obis.com.ar/wp-content/uploads/2021/07/kosiuko-1024x1024.png'
